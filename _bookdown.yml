@@ -1,6 +1,6 @@
 book_filename: "olimpiadas-bigdata-2021"
 delete_merged_file: true
-output_dir: 'output'
+output_dir: 'docs'
 language:
   ui:
     chapter_name: ""
