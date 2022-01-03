@@ -1,0 +1,66 @@
+--- 
+title: "&#127942; Olimpiadas de Big Data 2021"
+documentclass: krantz
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+fontsize: 10pt
+monofont: "Fira Code Retina"
+monofontoptions: "Scale=0.7"
+link-citations: yes
+colorlinks: yes
+lot: yes
+lof: yes
+site: bookdown::bookdown_site
+description: "Lugar donde está toda la información relativa a las Olimpiadas de Big Data organizadas por MIDAS UC"
+github-repo: estebanrucan/olimpiadas-bigdata-2021
+graphics: yes
+params:
+    especie: "setosa"
+---
+
+```{r setup, include=FALSE, eval=TRUE}
+library(knitr)
+
+opts_chunk$set( 
+  comment = "",
+  fig.align = "center", 
+  tidy = FALSE, 
+  tidy.opts = list(width.cutoff = 10)
+)
+
+options(
+  htmltools.dir.version = FALSE, 
+  formatR.indent = 2, 
+  width = 55, 
+  digits = 4,
+  dplyr.summarise.inform = FALSE
+)
+
+if(is_latex_output()){
+  opts_chunk$set(
+    out.width = "\\textwidth", 
+    fig.width = 8, 
+    fig.asp = 0.618,
+    fig.pos = "H"
+  )
+}
+
+pkgs <- c('tidyverse', 
+          'rpart', 
+          'rpart.tree')
+
+pacman::p_load(pkgs, character.only = TRUE)
+
+# otherwise output in PDF blurry
+
+write_bib(c(.packages(), pkgs), 'packages.bib')
+
+# fix remotes bib
+bib <- readLines("packages.bib")
+bib <- gsub("#readme", "", bib)
+writeLines(bib, "packages.bib")
+```
+
+# &#128197; Agenda {-}
+
+Relleno
