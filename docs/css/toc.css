@@ -38,13 +38,14 @@
 }
 
 td, tr, th {
-  color:black !important;
+  color: black !important;
+  border: 2px solid #5f9ea0;
   background-color: transparent !important;
 }
 
 table {
-  color:white !important;
-  background-color: #F0F0F7 !important;
+  border: 2px solid #5f9ea0;
+  background-color: #ffffff !important;
 }
 
 
