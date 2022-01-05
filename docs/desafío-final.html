@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>⌨ Laboratorio 2 | 🏆 Olimpiadas de Big Data 2021</title>
+  <title>🥇 Desafío final | 🏆 Olimpiadas de Big Data 2021</title>
   <meta name="description" content="Lugar donde está toda la información relativa a las Olimpiadas de Big Data organizadas por MIDAS UC" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="⌨ Laboratorio 2 | 🏆 Olimpiadas de Big Data 2021" />
+  <meta property="og:title" content="🥇 Desafío final | 🏆 Olimpiadas de Big Data 2021" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="estebanrucan/olimpiadas-bigdata-2021" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="⌨ Laboratorio 2 | 🏆 Olimpiadas de Big Data 2021" />
+  <meta name="twitter:title" content="🥇 Desafío final | 🏆 Olimpiadas de Big Data 2021" />
   
   <meta name="twitter:description" content="Lugar donde está toda la información relativa a las Olimpiadas de Big Data organizadas por MIDAS UC" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="laboratorio-1.html"/>
-<link rel="next" href="laboratorio-3.html"/>
+<link rel="prev" href="laboratorio-4.html"/>
+
 <script src="libs/header-attrs/header-attrs.js"></script>
 <script src="libs/jquery/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -163,40 +163,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="laboratorio-2" class="section level1 unnumbered">
-<h1>⌨ Laboratorio 2</h1>
+<div id="desafío-final" class="section level1 unnumbered">
+<h1>🥇 Desafío final</h1>
 <ul>
-<li><p><a href="data/fraude.csv" target="_blank">Datos del laboratorio</a></p></li>
-<li><p><a href="https://www.google.cl" target="_blank">Grabación</a></p></li>
-<li><p><strong>Packages a usar</strong>:</p></li>
+<li><a href="https://www.google.cl" target="_blank">Datos</a></li>
+<li><strong>Enunciado</strong>:
+<iframe src="http://docs.google.com/gview?url=https://admisionyregistros.uc.cl/images/pdf/folletos_carreras/estadistica.pdf&embedded=true" style="width:100%; height:1000px;" frameborder="0">PDF de la clase</iframe></li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="laboratorio-2.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb2-2"><a href="laboratorio-2.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(caret)</span>
-<span id="cb2-3"><a href="laboratorio-2.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rpart)</span>
-<span id="cb2-4"><a href="laboratorio-2.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rpart.plot)</span>
-<span id="cb2-5"><a href="laboratorio-2.html#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rsample)</span>
-<span id="cb2-6"><a href="laboratorio-2.html#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(recipes)</span>
-<span id="cb2-7"><a href="laboratorio-2.html#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(themis)</span>
-<span id="cb2-8"><a href="laboratorio-2.html#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(yardstick)</span></code></pre></div>
-<p>La base de datos <code>fraude.csv</code> contiene información sobre transacciones bancarias de cierto banco. La variable <code>isFraud</code> indica con un 1 si la transacción es fraudulenta y 0 si no lo es.</p>
-<p>Genere un modelo que permita predecir si una transacción es fraudulenta a través de las otras variables de la base de datos.</p>
-<ol style="list-style-type: decimal">
-<li><p>Realice un análisis exploratorio de la variable <code>isFraud</code>, mencione aspectos que le llamen la atención.</p></li>
-<li><p>Obtenga sets de entrenamiento y de prueba, estratifique según la variable respuesta.</p></li>
-<li><p>Genere un árbol de decisión, establezca como parámetros del modelo <code>minsplit=10</code> y <code>maxdepth=5</code>.</p></li>
-<li><p>Con los datos de prueba realice una matriz de confusión, luego obtenga las métricas <em>precisión</em>, <em>sensibilidad</em> y <em>especificidad</em>. Entregue una interpretación de los valores respecto al contexto en que se está trabajando.</p></li>
-<li><p>Construya un gráfico con la curva ROC de los valores predichos con el set de prueba. ¿Qué se puede concluir con el valor del área de la curva ROC?.</p></li>
-<li><p>Decida si la siguiente transacción es fraudulenta:</p>
-<ul>
-<li><code>step</code>: 300</li>
-<li><code>type</code>: “TRANSFER”</li>
-<li><code>amount</code>: 218,000</li>
-<li><code>oldbalanceOrg</code>: 218,100</li>
-<li><code>newbalanceOrig</code>: 100</li>
-<li><code>oldbalanceDest</code>: 0</li>
-<li><code>newbalanceDest</code>: 218,000</li>
-</ul></li>
-</ol>
 
 </div>
             </section>
@@ -204,8 +177,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="laboratorio-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="laboratorio-3.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="laboratorio-4.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook/js/app.min.js"></script>

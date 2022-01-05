@@ -1,3 +1,41 @@
 # &#9000; Laboratorio 2 {-}
 
-Relleno
+* <a href="data/fraude.csv" target="_blank">Datos del laboratorio</a>
+* <a href="https://www.google.cl" target="_blank">Grabación</a>
+
+* **Packages a usar**:
+
+```{r eval=FALSE}
+library(tidyverse)
+library(caret)
+library(rpart)
+library(rpart.plot)
+library(rsample)
+library(recipes)
+library(themis)
+library(yardstick)
+```
+
+
+La base de datos `fraude.csv` contiene información sobre transacciones bancarias de cierto banco. La variable `isFraud` indica con un 1 si la transacción es fraudulenta y 0 si no lo es.
+
+Genere un modelo que permita predecir si una transacción es fraudulenta a través de las otras variables de la base de datos.
+
+1. Realice un análisis exploratorio de la variable `isFraud`, mencione aspectos que le llamen la atención.
+
+2. Obtenga sets de entrenamiento y de prueba, estratifique según la variable respuesta.
+
+3. Genere un árbol de decisión, establezca como parámetros del modelo `minsplit=10` y `maxdepth=5`.
+
+4. Con los datos de prueba realice una matriz de confusión, luego obtenga las métricas *precisión*, *sensibilidad* y *especificidad*. Entregue una interpretación de los valores respecto al contexto en que se está trabajando.
+
+5. Construya un gráfico con la curva ROC de los valores predichos con el set de prueba. ¿Qué se puede concluir con el valor del área de la curva ROC?.
+
+6. Decida si la siguiente transacción es fraudulenta:
+    * `step`: 300
+    * `type`: "TRANSFER"
+    * `amount`: 218,000
+    * `oldbalanceOrg`: 218,100
+    * `newbalanceOrig`: 100
+    * `oldbalanceDest`: 0
+    * `newbalanceDest`: 218,000

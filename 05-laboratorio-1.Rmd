@@ -3,6 +3,14 @@
 * <a href="data/mcdonalds.csv" target="_blank">Datos del laboratorio</a>
 * <a href="https://www.google.cl" target="_blank">Grabación</a>
 
+* **Packages a usar**:
+
+```{r eval=FALSE}
+library(tidyverse)
+library(pspline)
+```
+
+
 Un gerente de McDonald's le ha contratado para realizar un balance sobre la cantidad de grasa saturada que tienen sus alimentos, ya que no están cumpliendo la normativa y necesitan disminuirlas con suma urgencia.
 
 Usted con sus sabios conocimientos sobre esta cadena de comida rápida, cree la cantidad de sodio incide directamente en la cantidad de grasa saturada que tendrán finalmente los alimentos. La base de datos `mcdonalds.csv` contiene dicha información.
