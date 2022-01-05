@@ -100,7 +100,20 @@
             <section class="normal" id="section-">
 <div id="laboratorio-1" class="section level1 unnumbered">
 <h1>⌨ Laboratorio 1</h1>
-<p>Relleno</p>
+<ul>
+<li><a href="data/mcdonalds.csv" target="_blank">Datos del laboratorio</a></li>
+<li><a href="https://www.google.cl" target="_blank">Grabación</a></li>
+</ul>
+<p>Un gerente de McDonald’s le ha contratado para realizar un balance sobre la cantidad de grasa saturada que tienen sus alimentos, ya que no están cumpliendo la normativa y necesitan disminuirlas con suma urgencia.</p>
+<p>Usted con sus sabios conocimientos sobre esta cadena de comida rápida, cree la cantidad de sodio incide directamente en la cantidad de grasa saturada que tendrán finalmente los alimentos. La base de datos <code>mcdonalds.csv</code> contiene dicha información.</p>
+<ol style="list-style-type: decimal">
+<li><p>Realice un análisis exploratorio a través de gráficos que le permita comparar la grasa saturada de los alimentos respecto a la categoría del alimento y el sodio del mismo. ¿Qué características llaman su atención?</p></li>
+<li><p>Construya un gráfico que muestre las correlaciones entre cada variable de la base de datos. Indique los tres pares de variables que tienen una asociación lineal más fuerte.</p></li>
+<li><p>Usando la variable que tenga la asociación lineal más fuerte respecto a la grasa saturada, realice un gráfico de dispersión y añada la mejor recta que se adapte a las observaciones. Comente.</p></li>
+<li><p>Genere un estimador de Nayara-Watson, encuentre el mejor valor del ancho de banda a través de validación cruzada del tipo <em>leave-one-out</em>.</p></li>
+<li><p>Ahora, realize una regresión basada en splines usando el package <code>psplines</code>. Encuentre el mejor valor de suavizamiento a través de validación cruzada.</p></li>
+<li><p>Grafique las variables involucradas en los dos modelos, incluyendo curvas con los valores ajustados por estos, además añada la recta encontrada en el paso <strong>3</strong>. Decida que tipo de regresión es más apta para el contexto y concluya.</p></li>
+</ol>
 
 </div>
             </section>
