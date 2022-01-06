@@ -1,11 +1,46 @@
 # &#9000; Laboratorio 3 {-}
 
-* &#128203; <a href="data/mcdonalds.csv" target="_blank">Datos del laboratorio</a>
-* &#9654; <a href="https://www.google.cl" target="_blank">Grabación</a>
+* <a href="data/countries.csv" target="_blank">&#128203; Datos del laboratorio</a>
+* <a href="https://www.google.cl" target="_blank">&#9654; Grabación</a>
 
 * &#128230; **Packages a usar**:
 
 ```{r eval=FALSE}
 require(tidyverse)
+require(factoextra)
+require(parameters) # install.packages("parameters", dependencies = TRUE)
 ```
+
+La base de datos `countries.csv` contiene indicadores socio-económicos sobre 167 países, algunos de estos indicadores son:
+
+* Mortalidad infantil.
+* Porcentaje de exportaciones.
+* Porcentaje de importaciones.
+* Ingreso.
+* Esperanza de vida.
+* PIB (o GDP) per-cápita.
+* Etc.
+
+La fundación HELP desea repartir aproximadamente 10 millones, pero no están en conocimiento de como repartir el dinero de forma estratégica y efectiva. Para lograr este objetivo, deberá usar métodos de agrupamiento para encontrar a los países que más requieren de apoyo económico.
+
+1. Realice un análisis exploratorio de la base de datos. Indique cuales son los países con peor y mejor ingreso per-cápita.
+
+2. Muestre distintos gráficos de dispersión que permitan encontrar posibles patrones o asociaciones en la base de datos. ¿Que elementos destacan?.
+
+3. Calcule la media y la desviación estándar de cada variable. Indique si es necesario estandarizar los datos con miras a aplicar un algoritmo de aprendizaje no supervisado.
+
+4. Usando funciones de los packages `parameters` y `factoextra`, proponga una cantidad de grupos que sea lo más acorde posible a los datos. Use el gráfico de sedimentación.
+
+5. Aplique el algoritmo *K-Means* usando funciones del package `factoextra` con cantidad de centroides igual a la cantidad de grupos indicada en el paso anterior. Mencione cinco países por clúster.
+
+6. Aplique el algoritmo de *agrupamiento jerárquico* usando funciones del package `factoextra` con la cantidad de grupos igual a la indicada en el paso **4**. Utilice un método tal que la cantidad de observaciones por grupo sea pareja.
+
+7. Realice un dendrograma que muestre con colores los grupos escogidos. Mencione cinco países por clúster.
+
+8. Compare ambos algoritmos visualmente con la función `fviz_cluster` del package `factoextra`. ¿Que diferencias y similitudes logra apreciar?
+
+9. Usando los grupos escogidos por el algoritmo *K-Means*, muestre el promedio que tienen todas las variables por grupo en la base de datos original.
+
+10. Entregue una recomendación final a la fundación HELP en base al análisis llevado a cabo.
+
 

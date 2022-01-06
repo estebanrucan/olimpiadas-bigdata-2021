@@ -1,6 +1,6 @@
-# 	&#129351; Desafío final {-}
+# &#129351; Desafío final {-}
 
-* &#128203; <a href="https://www.google.cl" target="_blank">Datos</a>
-* &#128196; **Enunciado**:
+* <a href="https://www.google.cl" target="_blank">&#128203; Datos</a>
+* **&#128196; Enunciado**:
 
 <iframe src="https://docs.google.com/gview?url=https://admisionyregistros.uc.cl/images/pdf/folletos_carreras/estadistica.pdf&embedded=true" style="width:100%; height:1000px;" frameborder="0">PDF de la clase</iframe>
