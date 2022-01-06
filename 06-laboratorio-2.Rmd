@@ -1,9 +1,9 @@
 # &#9000; Laboratorio 2 {-}
 
-* <a href="data/fraude.csv" target="_blank">Datos del laboratorio</a>
-* <a href="https://www.google.cl" target="_blank">Grabación</a>
+* &#128203; <a href="data/fraude.csv" target="_blank">Datos del laboratorio</a>
+* &#9654; <a href="https://www.google.cl" target="_blank">Grabación</a>
 
-* **Packages a usar**:
+* &#128230; **Packages a usar**:
 
 ```{r eval=FALSE}
 library(tidyverse)

@@ -1,3 +1,11 @@
 # &#9000; Laboratorio 3 {-}
 
-Relleno
+* &#128203; <a href="data/mcdonalds.csv" target="_blank">Datos del laboratorio</a>
+* &#9654; <a href="https://www.google.cl" target="_blank">Grabación</a>
+
+* &#128230; **Packages a usar**:
+
+```{r eval=FALSE}
+require(tidyverse)
+```
+
