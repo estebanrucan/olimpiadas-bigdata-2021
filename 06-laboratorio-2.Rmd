@@ -33,9 +33,9 @@ Genere un modelo que permita predecir si una transacción es fraudulenta a trav�
 
 6. Decida si la siguiente transacción es fraudulenta:
     * `step`: 300
-    * `type`: "TRANSFER"
-    * `amount`: 218,000
-    * `oldbalanceOrg`: 218,100
-    * `newbalanceOrig`: 100
-    * `oldbalanceDest`: 0
-    * `newbalanceDest`: 218,000
+    * `type`: TRANSFER
+    * `amount`: $218,000
+    * `oldbalanceOrg`: $218,100
+    * `newbalanceOrig`: $100
+    * `oldbalanceDest`: $0
+    * `newbalanceDest`: $218,000

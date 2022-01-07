@@ -21,7 +21,7 @@ La base de datos `countries.csv` contiene indicadores socio-económicos sobre 16
 * PIB (o GDP) per-cápita.
 * Etc.
 
-La fundación HELP desea repartir aproximadamente 10 millones, pero no están en conocimiento de como repartir el dinero de forma estratégica y efectiva. Para lograr este objetivo, deberá usar métodos de agrupamiento para encontrar a los países que más requieren de apoyo económico.
+La fundación HELP desea repartir aproximadamente 10 millones de dólares, pero no están en conocimiento de como repartir el dinero de forma estratégica y efectiva. Para lograr este objetivo, deberá usar métodos de agrupamiento para encontrar a los países que más requieren de apoyo económico.
 
 1. Realice un análisis exploratorio de la base de datos. Indique cuales son los países con peor y mejor ingreso per-cápita.
 
