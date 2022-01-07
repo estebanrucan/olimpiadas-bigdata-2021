@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@300;400&family=Open+Sans:wght@300&display=swap');
 
 body, div, p, h1, h2, h3 {
-  font-family: 'Lora', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 code, pre{
@@ -16,9 +16,7 @@ p.caption {
   color: #777;
   margin-top: 10px;
 }
-p code {
-  white-space: inherit;
-}
+
 pre {
   word-break: normal;
   word-wrap: normal;

@@ -60,17 +60,58 @@ writeLines(bib, "packages.bib")
 
 # &#128197; Agenda {-}
 
-|               |          Lunes 10          |         Martes 11        |
-|--------------:|:--------------------------:|:------------------------:|
-|   9:00 - 9:30 |         Bienvenida         |                          |
-|  9:30 - 10:50 | [Asociación entre variables](asociación-entre-variables.html) |  [Métodos de agrupamiento](métodos-de-agrupamiento.html) |
-| 10:50 - 11:00 |           Recreo           |          Recreo          |
-| 11:00 - 12:30 |        [Laboratorio 1](laboratorio-1.html)       |       [Laboratorio 3](laboratorio-3.html)      |
-| 12:30 - 14:00 |          Almuerzo          |         Almuerzo         |
-| 14:00 - 15:20 |  [Métodos de clasificación](métodos-de-clasificación.html)  | [Series de tiempo y mapas](series-de-tiempo-y-mapas.html) |
-| 15:20 - 15:30 |           Recreo           |          Recreo          |
-| 15:30 - 17:00 |        [Laboratorio 2](laboratorio-2.html)       |       [Laboratorio 4](laboratorio-4.html)      |
-
-* **Desafío Final**: Miércoles 12 de enero 2021.
-* **Presentaciones**: Jueves 13 de enero 2021.
-
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-vbic"><span style="font-weight:bold">Hora</span></th>
+    <th class="tg-vbic"><span style="font-weight:bold">Lunes 10</span></th>
+    <th class="tg-vbic"><span style="font-weight:bold">Martes 11</span></th>
+    <th class="tg-vbic"><span style="font-weight:bold">Miércoles 12</span></th>
+    <th class="tg-amwm">Jueves 13</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-o40d"><span style="font-weight:normal">9:00 - 9:30</span></td>
+    <td class="tg-yb78"><span style="font-weight:normal">Bienvenida</span></td>
+    <td class="tg-o40d"></td>
+    <td class="tg-duar" rowspan="8"><span style="font-weight:bold"><a href="desafío-final.html">&#129351; Desafío final</a></span><br><span style="font-weight:normal">Todo el día.</span></td>
+    <td class="tg-nrix" rowspan="8"><span style="font-weight:bold"><a href="desafío-final.html">&#129351; Desafío final</a></span><br>Hasta las 12:30 hrs.<br><br><br><br><span style="font-weight:bold">Presentaciones</span><br>13:30 - 17:50 hrs.<br><br><br><br><span style="font-weight:bold">Deliberación y premiación</span><br>17:50 - 19:00 hrs.</td>
+  </tr>
+  <tr>
+    <td class="tg-o40d"><span style="font-weight:normal">9:30 - 10:50</span></td>
+    <td class="tg-g5p9"><span style="font-weight:bold"><a href="asociación-entre-variables.html">&#9999; Asociación entre variables</a></span></td>
+    <td class="tg-vbic"><span style="font-weight:bold"><a href="métodos-de-agrupamiento.html">&#9999; Métodos de agrupamiento</a></span></td>
+  </tr>
+  <tr>
+    <td class="tg-o40d"><span style="font-weight:normal">10:50 - 11:00</span></td>
+    <td class="tg-yb78"><span style="font-weight:normal">Recreo</span></td>
+    <td class="tg-o40d"><span style="font-weight:normal">Recreo</span></td>
+  </tr>
+  <tr>
+    <td class="tg-o40d"><span style="font-weight:normal">11:00 - 12:30</span></td>
+    <td class="tg-g5p9"><span style="font-weight:bold"><a href="laboratorio-1.html">&#9000; Laboratorio 1</a></span></td>
+    <td class="tg-vbic"><span style="font-weight:bold"><a href="laboratorio-3.html">&#9000; Laboratorio 3</a></span></td>
+  </tr>
+  <tr>
+    <td class="tg-o40d"><span style="font-weight:normal">12:30 - 14:00</span></td>
+    <td class="tg-yb78"><span style="font-weight:normal">Almuerzo</span></td>
+    <td class="tg-o40d"><span style="font-weight:normal">Almuerzo</span></td>
+  </tr>
+  <tr>
+    <td class="tg-o40d"><span style="font-weight:normal">14:00 - 15:20</span></td>
+    <td class="tg-g5p9"><span style="font-weight:bold"><a href="métodos-de-clasificación.html">&#9999; Métodos de clasificación</a></span></td>
+    <td class="tg-vbic"><span style="font-weight:bold"><a href="series-de-tiempo-y-mapas.html">&#9999; Series de tiempo y mapas</a></span></td>
+  </tr>
+  <tr>
+    <td class="tg-o40d"><span style="font-weight:normal">15:20 - 15:30</span></td>
+    <td class="tg-yb78"><span style="font-weight:normal">Recreo</span></td>
+    <td class="tg-o40d"><span style="font-weight:normal">Recreo</span></td>
+  </tr>
+  <tr>
+    <td class="tg-o40d"><span style="font-weight:normal">15:30 - 17:00</span></td>
+    <td class="tg-g5p9"><span style="font-weight:bold"><a href="laboratorio-2.html">&#9000; Laboratorio 2</a></span></td>
+    <td class="tg-vbic"><span style="font-weight:bold"><a href="laboratorio-4.html">&#9000; Laboratorio 4</a></span></td>
+  </tr>
+</tbody>
+</table>
