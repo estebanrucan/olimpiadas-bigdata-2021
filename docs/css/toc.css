@@ -121,3 +121,20 @@
   text-transform: uppercase;
   font-size: .95em;
 }
+
+.zoombutton {
+
+  background: #2d8cff;
+  color: white;
+  border: #e7e7e7;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
