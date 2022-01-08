@@ -4,11 +4,11 @@ body, div, p, h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
-code, pre{
+code, pre {
   font-family: 'Fira Code', monospace;
 }
 
-.sourceCode{
+.sourceCode {
   font-family: 'Fira Code', monospace;
 }
 
@@ -20,10 +20,11 @@ p.caption {
 pre {
   word-break: normal;
   word-wrap: normal;
-  -webkit-box-shadow: 0px 8px 5px -8px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 8px 5px -8px rgba(0,0,0,0.75);
-  box-shadow: 0px 8px 5px -8px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 8px 5px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 8px 5px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 8px 5px -8px rgba(0, 0, 0, 0.75);
 }
+
 pre code {
   white-space: inherit;
 }
@@ -32,27 +33,27 @@ section.normal strong {
   color: #5f9ea0;
 }
 
-section.normal h1  {
+section.normal h1 {
   color: #5f9ea0;
 }
 
-section.normal h2  {
+section.normal h2 {
   color: #5f9ea0;
 }
 
-section.normal h3  {
+section.normal h3 {
   color: #5f9ea0;
 }
 
-section.normal h4  {
+section.normal h4 {
   color: #5f9ea0;
 }
 
-section.normal h5  {
+section.normal h5 {
   color: #5f9ea0;
 }
 
-section.normal h6  {
+section.normal h6 {
   color: #5f9ea0;
 }
 
@@ -61,7 +62,7 @@ section.normal h6  {
 }
 
 .btn {
-  background-color: #5f9ea0; 
+  background-color: #5f9ea0;
   border: none;
   color: white;
   padding: 10px 22px;
@@ -70,33 +71,48 @@ section.normal h6  {
   font-size: 16px;
 }
 
-.book-header.fixed a:link { 
-  background-color:#FFF;
+.book-header.fixed a:link {
+  background-color: #FFF;
   color: #5f9ea0
-}
-.book-header.fixed a:visited{ 
-  background-color:#FFF;
-  color: #5f9ea0
-}
-.book-header.fixed a:hover{ 
-  background-color:#FFF;
-  color: #5f9ea0
-}
-.book-header.fixed a:active{ 
-  background-color:#FFF;
-  color: #5f9ea0
-}
-.book-header { 
-  border-color: #fff!important;
 }
 
-.page-wrapper a:link { color: #5f9ea0 !important; }
-.page-wrapper a:visited { color: #5f9ea0 !important; }
-.page-wrapper a:hover { color: #5f9ea0 !important; }
-.page-wrapper a:active { color: #5f9ea0 !important; }
+.book-header.fixed a:visited {
+  background-color: #FFF;
+  color: #5f9ea0
+}
+
+.book-header.fixed a:hover {
+  background-color: #FFF;
+  color: #5f9ea0
+}
+
+.book-header.fixed a:active {
+  background-color: #FFF;
+  color: #5f9ea0
+}
+
+.book-header {
+  border-color: #fff !important;
+}
+
+.page-wrapper a:link {
+  color: #5f9ea0 !important;
+}
+
+.page-wrapper a:visited {
+  color: #5f9ea0 !important;
+}
+
+.page-wrapper a:hover {
+  color: #5f9ea0 !important;
+}
+
+.page-wrapper a:active {
+  color: #5f9ea0 !important;
+}
 
 .dropdown-menu .buttons .button {
-    color: #5f9ea0;
+  color: #5f9ea0;
 }
 
 /* notes */
@@ -110,11 +126,11 @@ section.normal h6  {
   border-right: hidden;
 }
 
-.rmdnote{
+.rmdnote {
   border-left: 4px solid #5f9ea0;
 }
 
-.rmdnote:before{
+.rmdnote:before {
   background-color: #5f9ea0;
   border-radius: 100%;
   color: #fff;
@@ -145,4 +161,8 @@ section.normal h6  {
   justify-content: center;
 
 
+}
+
+.zoombutton:hover {
+  background: #026ff5;
 }

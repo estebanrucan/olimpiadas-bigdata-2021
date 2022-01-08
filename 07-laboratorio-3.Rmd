@@ -6,9 +6,9 @@
 * &#128230; **Packages a usar**:
 
 ```{r eval=FALSE}
-require(tidyverse)
-require(factoextra)
-require(parameters) # install.packages("parameters", dependencies = TRUE)
+library(tidyverse)
+library(factoextra)
+library(parameters) # install.packages("parameters", dependencies = TRUE)
 ```
 
 La base de datos `countries.csv` contiene indicadores socio-económicos sobre 167 países, algunos de estos indicadores son:

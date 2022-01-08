@@ -1,10 +1,47 @@
 # &#9000; Laboratorio 4 {-}
 
-* &#128203; <a href="data/mcdonalds.csv" target="_blank">Datos del laboratorio</a>
-* &#9654; <a href="https://www.google.cl" target="_blank">Grabación</a>
+* <a href="data/gapminder.csv" target="_blank">&#128203; Datos del laboratorio</a>
+* <a href="https://www.google.cl" target="_blank">&#9654; Grabación</a>
 
 * &#128230; **Packages a usar**:
 
 ```{r eval=FALSE}
-require(tidyverse)
+library(tidyverse)
+library(leaflet)
+library(lubridate)
+library(gganimate)
 ```
+
+La fundación *Gapminder* es una organización sin fines de lucro con sede en Suecia que promueve el desarrollo global mediante el uso de estadísticas que pueden ayudar a reducir mitos comunes sobre la salud y economía mundial. Se han encargado de colectar diversos datos a lo largo del tiempo de 168 países. Algunas de las variables disponibles son:
+
+* `country`: país.
+* `continent`: continente.
+* `collected`: fecha en que se recolectaron los datos.
+* `longitude` y `latitude`: longitud y latitud respectivamente.
+* `infant_mortality`: índice de mortalidad infantil.
+* `life_expectancy`: esperanza de vida en años.
+* `population`: Población total.
+* `gdp`: PIB (Producto Interno Bruto) anual.
+
+Nuestro objetivo será validar estas dos hipótesis:
+
+* *El mundo está dividido entre países desarrollados y países en vías de desarrollo*.
+* *Los países ricos se hacen más ricos mientras los pobres se hacen más pobres*.
+
+Para ello realizaremos un análisis exploratorio a partir de series temporales, gráficos de dispersión y mapas.
+
+1. Verifique que las variables de la base de datos estén en el formato correcto. Realice modificaciones en caso de que sea necesario.
+
+2. Cree dos bases de datos adicionales: 
+    * Sólo con información de Chile.
+    * Sólo con información del año 2010.
+    
+3. Realice un análisis exploratorio en ambas bases de datos, muestre distintos gráficos de dispersión y de tendencias. Mencione los patrones encontrados.
+    
+4. Construya un gráfico que permita estudiar la tendencia de la esperanza de vida en Chile a lo largo del tiempo. Mencione posibles patrones en el gráfico.
+
+5. Añada la variable `log_gdppercap` que es el logaritmo en base 10 de la división entre las variables `gdp` y `population`. Luego realice un gráfico de dispersión entre las variables `log_gdppercap` y `life_expectancy`, coloree las observaciones de acuerdo al continente al que pertenecen. ¿Qué patrones destacan?. Considere solo datos del 2010 o utilice el package `gganimate`.
+
+6. Construya un mapa usando el package `ggplot2` o `leaflet` que permita analizar la esperanza de vida en el año 2010. Identifique al menos tres patrones.
+
+7. Decida la validez de las hipótesis planteadas al comienzo. Base sus respuestas en el análisis exploratorio realizado. Además, indique otros posibles análisis que puedan reafirmar sus conclusiones.

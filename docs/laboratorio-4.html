@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <title>⌨ Laboratorio 4 | 🏆 Olimpiadas de Big Data 2021</title>
+  <title>⌨ Laboratorio 4 | 🏆 Olimpiadas de Big Data 2022</title>
   <meta name="description" content="Lugar donde está toda la información relativa a las Olimpiadas de Big Data organizadas por MIDAS UC" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="⌨ Laboratorio 4 | 🏆 Olimpiadas de Big Data 2021" />
+  <meta property="og:title" content="⌨ Laboratorio 4 | 🏆 Olimpiadas de Big Data 2022" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="⌨ Laboratorio 4 | 🏆 Olimpiadas de Big Data 2021" />
+  <meta name="twitter:title" content="⌨ Laboratorio 4 | 🏆 Olimpiadas de Big Data 2022" />
   
   <meta name="twitter:description" content="Lugar donde está toda la información relativa a las Olimpiadas de Big Data organizadas por MIDAS UC" />
   
@@ -155,7 +155,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">🏆 Olimpiadas de Big Data 2021</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">🏆 Olimpiadas de Big Data 2022</a>
           </h1>
         </div>
 
@@ -166,11 +166,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="laboratorio-4" class="section level1 unnumbered">
 <h1>⌨ Laboratorio 4</h1>
 <ul>
-<li><p>📋 <a href="data/mcdonalds.csv" target="_blank">Datos del laboratorio</a></p></li>
-<li><p>▶ <a href="https://www.google.cl" target="_blank">Grabación</a></p></li>
+<li><p><a href="data/gapminder.csv" target="_blank">📋 Datos del laboratorio</a></p></li>
+<li><p><a href="https://www.google.cl" target="_blank">▶ Grabación</a></p></li>
 <li><p>📦 <strong>Packages a usar</strong>:</p></li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="laboratorio-4.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(tidyverse)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="laboratorio-4.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb4-2"><a href="laboratorio-4.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb4-3"><a href="laboratorio-4.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb4-4"><a href="laboratorio-4.html#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gganimate)</span></code></pre></div>
+<p>La fundación <em>Gapminder</em> es una organización sin fines de lucro con sede en Suecia que promueve el desarrollo global mediante el uso de estadísticas que pueden ayudar a reducir mitos comunes sobre la salud y economía mundial. Se han encargado de colectar diversos datos a lo largo del tiempo de 168 países. Algunas de las variables disponibles son:</p>
+<ul>
+<li><code>country</code>: país.</li>
+<li><code>continent</code>: continente.</li>
+<li><code>collected</code>: fecha en que se recolectaron los datos.</li>
+<li><code>longitude</code> y <code>latitude</code>: longitud y latitud respectivamente.</li>
+<li><code>infant_mortality</code>: índice de mortalidad infantil.</li>
+<li><code>life_expectancy</code>: esperanza de vida en años.</li>
+<li><code>population</code>: Población total.</li>
+<li><code>gdp</code>: PIB (Producto Interno Bruto) anual.</li>
+</ul>
+<p>Nuestro objetivo será validar estas dos hipótesis:</p>
+<ul>
+<li><em>El mundo está dividido entre países desarrollados y países en vías de desarrollo</em>.</li>
+<li><em>Los países ricos se hacen más ricos mientras los pobres se hacen más pobres</em>.</li>
+</ul>
+<p>Para ello realizaremos un análisis exploratorio a partir de series temporales, gráficos de dispersión y mapas.</p>
+<ol style="list-style-type: decimal">
+<li><p>Verifique que las variables de la base de datos estén en el formato correcto. Realice modificaciones en caso de que sea necesario.</p></li>
+<li><p>Cree dos bases de datos adicionales:</p>
+<ul>
+<li>Sólo con información de Chile.</li>
+<li>Sólo con información del año 2010.</li>
+</ul></li>
+<li><p>Realice un análisis exploratorio en ambas bases de datos, muestre distintos gráficos de dispersión y de tendencias. Mencione los patrones encontrados.</p></li>
+<li><p>Construya un gráfico que permita estudiar la tendencia de la esperanza de vida en Chile a lo largo del tiempo. Mencione posibles patrones en el gráfico.</p></li>
+<li><p>Añada la variable <code>log_gdppercap</code> que es el logaritmo en base 10 de la división entre las variables <code>gdp</code> y <code>population</code>. Luego realice un gráfico de dispersión entre las variables <code>log_gdppercap</code> y <code>life_expectancy</code>, coloree las observaciones de acuerdo al continente al que pertenecen. ¿Qué patrones destacan?. Considere solo datos del 2010 o utilice el package <code>gganimate</code>.</p></li>
+<li><p>Construya un mapa usando el package <code>ggplot2</code> o <code>leaflet</code> que permita analizar la esperanza de vida en el año 2010. Identifique al menos tres patrones.</p></li>
+<li><p>Decida la validez de las hipótesis planteadas al comienzo. Base sus respuestas en el análisis exploratorio realizado. Además, indique otros posibles análisis que puedan reafirmar sus conclusiones.</p></li>
+</ol>
 
 </div>
             </section>

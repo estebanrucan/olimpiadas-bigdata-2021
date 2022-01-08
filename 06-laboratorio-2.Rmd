@@ -39,3 +39,5 @@ Genere un modelo que permita predecir si una transacción es fraudulenta a trav�
     * `newbalanceOrig`: $100
     * `oldbalanceDest`: $0
     * `newbalanceDest`: $218,000
+    
+Para ello, bosqueje el árbol de decisión modelado con el package `rpart.plot`. Verifique su respuesta usando la función `predict`.
