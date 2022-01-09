@@ -14,7 +14,7 @@ library(gganimate)
 
 La fundación *Gapminder* es una organización sin fines de lucro con sede en Suecia que promueve el desarrollo global mediante el uso de estadísticas que pueden ayudar a reducir mitos comunes sobre la salud y economía mundial. Se han encargado de colectar diversos datos a lo largo del tiempo de 168 países. Algunas de las variables disponibles son:
 
-* `country`: país.
+* `country`: país.   
 * `continent`: continente.
 * `collected`: fecha en que se recolectaron los datos.
 * `longitude` y `latitude`: longitud y latitud respectivamente.
